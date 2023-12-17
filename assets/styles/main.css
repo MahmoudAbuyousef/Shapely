@@ -1,0 +1,205 @@
+/* ================ Global Style =============== */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  outline: none;
+  border: none;
+  text-decoration: none;
+  list-style-type: none;
+}
+:root {
+  --main-color: #7e30e1;
+  --text-color: #fff;
+}
+button {
+  background-color: transparent;
+  cursor: pointer;
+}
+
+body {
+  font-family: "Raleway", sans-serif;
+}
+.logo__site {
+  font-size: 24px;
+  color: #2c2c2c;
+}
+@media (min-width: 992px) {
+  .container {
+    width: 80%;
+    margin: auto;
+  }
+}
+
+/* ===================== Btn Style =============== */
+.btn--purple,
+.btn--none {
+  color: var(--text-color);
+  padding: 20px;
+  width: 200px;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.btn--purple {
+  background-color: var(--main-color);
+}
+.btn--none {
+  border: 2px solid #fff;
+}
+.text-light {
+  color: #6b6a6a;
+  font-weight: bold;
+}
+.text-light:hover {
+  color: #404040;
+}
+.search--icon {
+  color: #3a52bf;
+  font-weight: bold;
+  margin-right: 4px;
+}
+i {
+  cursor: pointer;
+}
+
+.section {
+  padding: 40px 20px;
+}
+
+/* =================== Start Navbar ========================= */
+nav {
+  background-color: #fff;
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  box-shadow: 1px 1px 5px rgba(0, 0, 0, 0.3);
+}
+nav .container {
+  display: flex;
+  justify-content: space-between;
+  padding: 25px;
+  position: relative;
+}
+nav .nav-links ul li {
+  padding: 13px 0;
+}
+nav .active {
+  display: block !important;
+}
+.nav__item {
+  color: #2c2c2c;
+}
+.nav__search--icon {
+  position: relative;
+}
+.nav__search--icon form {
+  margin-top: 20px;
+  display: none;
+}
+.nav__search--icon form input {
+  padding: 20px;
+  border: 1px solid transparent;
+}
+.nav__search--icon form input:hover {
+  border: 1px solid var(--main-color);
+}
+.seacrh {
+  width: fit-content;
+}
+.nav__search--icon .active form {
+  display: block;
+}
+@media (max-width: 991px) {
+  nav .nav-links {
+    position: absolute;
+    top: 79px;
+    width: 100%;
+    left: 0;
+    background-color: #fff;
+    padding-left: 30px;
+    display: none;
+  }
+}
+@media (min-width: 992px) {
+  nav .nav--icon {
+    display: none;
+  }
+  .nav-links {
+    display: flex;
+    align-items: center;
+  }
+  .nav-links ul {
+    display: flex;
+  }
+  .nav__item {
+    padding: 10px;
+  }
+  .nav__search--icon {
+    margin-left: 10px;
+  }
+  .nav__search--icon button {
+    display: none;
+  }
+}
+/* =================== End Navbar =========================== */
+
+/* =================== Start Hero Section ========================= */
+.hero {
+  background-image: url("../images/hero.jpg");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  height: 580px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.hero .heading h1 {
+  color: #fff;
+  font-weight: 400;
+  font-size: 28px;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.hero .heading p {
+  font-size: 11px;
+  color: #eee;
+  margin-bottom: 20px;
+}
+
+.hero .btns {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+.hero .btns button {
+  margin: 10px 0;
+}
+
+/* =================== End Hero Section =========================== */
+
+/* =================== Start SEO Friendly ========================= */
+/* =================== End SEO Friendly =========================== */
+
+/* =================== Start Portfolio Section ========================= */
+/* =================== End Portfolio Section =========================== */
+
+/* =================== Start Parallax Section ========================= */
+/* =================== End Parallax Section =========================== */
+
+/* =================== Start Limitless Options Section ========================= */
+/* =================== End Limitless Options Section =========================== */
+
+/* =================== Start Our Latest Projects Section ========================= */
+/* =================== End Our Latest Projects Section =========================== */
+
+/* =================== Start Testimonials Section ========================= */
+/* =================== End Testimonials Section =========================== */
+
+/* =================== Start Our Main Clients Section ========================= */
+/* =================== End Our Main Clients Section =========================== */
+
+/* =================== Start Footer Section ========================= */
+/* =================== End Footer Section =========================== */
